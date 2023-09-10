@@ -1,0 +1,54 @@
+/* Add your CSS styling here to format the website layout, fonts, colors, etc. */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* header {
+  background-color: slateblue;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+} */
+
+/* nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+} */
+.psychologist-card img {
+  max-height: 80px; 
+  width: auto; 
+}
+
+
+section {
+  padding: 2rem;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+}
+
+h1{
+  color: #fd4801;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 0.5rem;
+  background-color: slateblue;
+  color: #fff;
+}

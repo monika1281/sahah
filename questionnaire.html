@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/questionnaire.css">
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+      </label>
+      <label class ="logo">SAHAH</label>
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="questionnaire.html">Questionnaire</a></li>
+      <li><a href="psychologist.html">psychologist</a></li>
+      </ul>
+    </nav>
+    <br><br>
+  <div class="container">
+    <div class="tab_box">
+      <button class="tab_btn">IQ QUIZ</button>
+      <button class="tab_btn">ACHIEVEMENT MOTIVATION QUIZ</button>
+      <button class="tab_btn">WORRY QUIZ</button>
+      <button class="tab_btn">EMOTIONAL INTELLIGENCE QUIZ</button>
+      <div class="line"></div>
+    </div>
+    <div class="content_box">
+      <div class="content">
+        <h2>Click on the below link to take the<br>IQ QUIZ</h2>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSffcxPhyR_u3XGl4FACIuzpk2TEnnxDPK3ZanTD5IjoCZTJVA/viewform?embedded=true"target="_self">Google Form Link</a>
+
+      </div>
+      <div class="content">
+        <h2>Click on the below link to take the ACHIEVEMENT MOTIVATION QUIZ</h2>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdqzQqpB3dPMsKay7Q_AW6ua4ndEq0DEJUmduAqeuWx-4VIbA/viewform?embedded=true" target="_self">Google Form Link</a>
+      </div>
+      
+      <div class="content">
+        <h2>Click on the below link to take the WORRY QUIZ</h2>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdRE_-Vd0NVqhdzVVpM4L1V6lv__pOSFKDpd6MJo5B2643EtA/viewform?embedded=true" target="_self">Google Form Link</a>
+
+      </div>
+      <div class="content">
+        <h2>Click on the below link to take the EMOTIONAL INTELLIGENCE QUIZ</h2>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfQlUH46nCkZ3Rh_uwGr2QjCJ0h3tOrgZ91AHTWkwclNKybjA/viewform?embedded=true" target="_self">Google Form Link</a>
+
+      </div>
+    </div>
+
+  </div>
+  <script>
+    const tabs= document.querySelectorAll('.tab_btn');
+    const all_content= document.querySelectorAll('.content');
+    const line = document.querySelector('.line');
+
+
+    tabs.forEach((tab,index)=>{
+      tab.addEventListener('click',(e)=>{
+        tabs.forEach(tab=>{tab.classList.remove('active')});
+        tab.classList.add('active');
+        line.style.width = e.target.offsetWidth + "px";
+        line.style.left = e.target.offsetLeft + "px";
+        all_content.forEach(content=>{content.classList.remove('active')})
+        all_content[index].classList.add('active');
+
+      })   
+    })
+     
+  </script>
+  </body>
+</html>
